@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="lib/slf4j-api-1.7.5.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.5.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring31.MYECLIPSE_SPRING31_CORE"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
