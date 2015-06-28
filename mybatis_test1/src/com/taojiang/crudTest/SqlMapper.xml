@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.taojiang.crudTest.SqlMapper">
+
+	<insert id="addUsers" parameterType="com.taojiang.bean.UserVO">
+		insert into users(NAME,age) values(#{NAME},#{age})
+	</insert>
+	
+	<update id="updateUsers" parameterType="com.taojiang.bean.UserVO">
+		update users set NAME=#{NAME},age=#{age} where id=#{id}
+	</update>
+	
+	
+	
+	<delete id="delUser" parameterType="int">
+		delete from users where id=#{id}
+	</delete>
+
+	<select id="getUser" parameterType="int" resultType="com.taojiang.bean.UserVO">
+		SELECT * FROM users where id = #{id}
+	</select>
+	
+	<select id="getAllUsers" resultType="com.taojiang.bean.UserVO">
+		Select * from users
+	</select>
+	
+</mapper>
